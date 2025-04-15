@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Hello from Flask and Azure!"
+    return "Hello from Flask and Azure! and now Auto Deploy Works!"
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 8000))
