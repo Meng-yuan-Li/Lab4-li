@@ -1,15 +1,15 @@
-# 使用 Python 官方镜像
+# Using the official Python image
 FROM python:3.10
 
-# 设置工作目录
+# Set the working directory
 WORKDIR /app
 
-# 复制并安装依赖
+# Copy and install dependencies
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-# 复制整个项目代码
+# Copy the entire project code
 COPY . .
 
-# 运行应用
+# Run the application
 CMD ["python", "main.py"]
